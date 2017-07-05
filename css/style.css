@@ -7,9 +7,45 @@ html {
 }
 body {
   background: transparent;
-  padding-top: 100px;
+  padding-top: 0;
   font-family: 'Yellowtail', cursive;
   font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6{
+  color:#FFF;
+  text-shadow: 2px 2px #000;
+}
+h1{
+  font-size:400%;
+}
+h2{
+  font-size:300%;
+}
+p{
+  font-size: 24px;
+}
+p span{
+  font-family: 'Fresca', sans-serif;
+}
+hr{
+  border: 1px solid #222;
+}
+hr.style15 {
+	border-top: 1px solid #222;
+	text-align: center;
+}
+hr.style15:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -20px;
+	padding: 0 10px;
+	color: #222;
+	font-size: 30px;
+}
+.header{
+  background: url('../img/muc.png') no-repeat center;
+  padding-top:100px;
 }
 .panel{
   overflow: visible;
@@ -19,6 +55,7 @@ body {
   background: url('../img/panel_01.png') no-repeat center;
   height:160px;
   border-bottom: 0;
+  padding-top: 50px;
 }
 .panel-body{
   background: url('../img/panel_02.png') repeat-y center;
@@ -26,6 +63,25 @@ body {
 }
 .panel-footer{
   background: url('../img/panel_03.png') no-repeat center;
+  height:161px;
+  border-top: 0;
+}
+.bland .panel{
+  overflow: visible;
+  background: transparent;
+}
+.bland .panel-heading{
+  background: url('../img/bland_01.png') no-repeat center;
+  height:160px;
+  border-bottom: 0;
+  padding-top: 50px;
+}
+.bland .panel-body{
+  background: url('../img/bland_02.png') repeat-y center;
+  min-height:140px;
+}
+.bland .panel-footer{
+  background: url('../img/bland_03.png') no-repeat center;
   height:161px;
   border-top: 0;
 }
