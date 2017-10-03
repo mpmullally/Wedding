@@ -110,3 +110,17 @@ hr.style15:after {
 .instamask img:hover {
   -webkit-mask-size: 500% 500%;
 }
+i{
+  color:#222;
+}
+.navbar-transparent{
+  background-color:rgba(0,0,0,0.3);
+}
+.center{
+  padding-left: 48%;
+}
+.glyphicon{
+  font-size:36px;
+  color:white;
+  padding-top: 4px;
+}

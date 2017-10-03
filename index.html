@@ -21,6 +21,16 @@
     <![endif]-->
   </head>
   <body>
+      <nav class="navbar navbar-transparent navbar-fixed-bottom">
+  <div class="container-fluid text-center">
+  <ul class="nav navbar-nav center">
+    <li>
+      <span id="arrow" class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+    </li>
+  </ul>
+
+  </div>
+</nav>
     <div class="container-fluid">
       <div class="row text-center header">
         <img src="img/text.png" />
@@ -119,5 +129,17 @@
     <feComposite in2="SourceAlpha" operator="in" />
   </filter>
 </svg>
+<!--<script>
+$(window).on("scroll touchmove",function() {
+   if($(window).scrollTop() + $(window).height() == $(document).height() || $(window).scrollTop() == 0 ) {
+       $('#arrow').removeClass('glyphicon glyphicon-arrow-down');
+       $('#arrow').addClass('glyphicon glyphicon-arrow-up');
+   }
+   else {
+$('#header_container').addClass('glyphicon glyphicon-arrow-down');
+$('#arrow').removeClass('glyphicon glyphicon-arrow-up');
+}
+});
+</script>-->
   </body>
 </html>
