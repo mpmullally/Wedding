@@ -85,3 +85,28 @@ hr.style15:after {
   height:161px;
   border-top: 0;
 }
+
+.instamask {
+  margin: 20px auto;
+  text-align: center;
+}
+.instamask img {
+  width: 300px;
+  height: 300px;
+}
+.instamask > * {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+  font-size: 2em;
+}
+.instamask img {
+  -webkit-mask: url('http://iamvdo.me/conf/2012/kiwiparty/img/masque2.png');
+  mask: url('#mask');
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-position: center;
+  transition: -webkit-mask-size .3s;
+}
+.instamask img:hover {
+  -webkit-mask-size: 500% 500%;
+}

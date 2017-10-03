@@ -28,6 +28,7 @@
       </div>
     </div>
     <div class="container">
+      <!--Ceremony-->
       <div class="row">
         <div class="col-md-10 col-md-push-1">
           <div class="panel text-center">
@@ -37,7 +38,9 @@
             <div class="panel-body">
               <div class="row">
                 <div class="col-lg-4 col-lg-push-2">
-                  <img src="img/ststans.jpg" class="img-responsive"/>
+                  <div class="instamask">
+                    <img src="img/ststans.jpg"/>
+                  </div>
                 </div>
                 <div class="col-lg-4 col-lg-push-2">
                   <h2>The Shrine Church<br /> of St. Stanislaus</h2>
@@ -53,7 +56,15 @@
           </div>
         </div>
       </div>
-      <hr class="style15"/>
+      <!--Horizontal Rule-->
+      <div class="row">
+        <div class="col-xs-1">
+        </div>
+        <div class="col-xs-10">
+          <img src="img/stroke.png" class="img-responsive" />
+        </div>
+      </div>
+      <!--Reception-->
       <div class="row">
         <div class="col-md-10 col-md-push-1">
           <div class="panel text-center bland">
@@ -73,13 +84,13 @@
                       <img src="img/barrio.png" class="img-responsive" />
                     </div>
                     <div class="col-xs-6">
-                      <img src="img/pizza1600.png" class="img-responsive" />
+                      <img src="img/sauced.png" class="img-responsive" />
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-lg-push-2">
-                  <img src="img/bayarts.jpg" class="img-responsive"/><br />
-                  <img src="img/bayarts2.jpg" class="img-responsive"/>
+                <div class="col-lg-4 col-lg-push-2 instamask">
+                  <img src="img/bayarts.jpg" class=""/><br />
+                  <img src="img/bayarts2.jpg" class=""/>
                 </div>
               </div>
             </div>
@@ -95,5 +106,18 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <svg>
+  <!-- THE mask -->
+  <mask id="mask" maskContentUnits="objectBoundingBox">
+    <!-- using an img, but this img is black/transparent so we filter it to make it white -->
+    <image xlink:href="http://iamvdo.me/conf/2012/kiwiparty/img/masque2.png" width="1" height="1" preserveAspectRatio="none" filter="url(#filter)"/>
+  </mask>
+
+  <!-- the filter to make the image white -->
+  <filter id="filter">
+    <feFlood flood-color="white" />
+    <feComposite in2="SourceAlpha" operator="in" />
+  </filter>
+</svg>
   </body>
 </html>
