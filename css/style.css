@@ -85,7 +85,10 @@ hr.style15:after {
   height:161px;
   border-top: 0;
 }
-
+.gray{
+  color:#222;
+  text-shadow: none;
+}
 .instamask {
   margin: 20px auto;
   text-align: center;
@@ -107,9 +110,9 @@ hr.style15:after {
   -webkit-mask-position: center;
   transition: -webkit-mask-size .3s;
 }
-.instamask img:hover {
+/*.instamask img:hover {
   -webkit-mask-size: 500% 500%;
-}
+}*/
 i{
   color:#222;
 }
